@@ -8,39 +8,14 @@ router.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: 'home.html',
+            templateUrl: '/modules/home/views/home.html',
+            controller: 'homeCtrl',
+            controllerAs: 'Home',
             params: {
-                title: "Material Starter"
+                title: "Directorio Funcionarios"
             }
         })
-        .state('cards', {
-            url: '/cards',
-            templateUrl: '/modules/cards/views/cards.html',
-            controller: 'cardsCtrl',
-            controllerAs: 'Cards',
-            params: {
-                title: "Cards"
-            }
-        })
-        .state('list', {
-            url: '/list',
-            templateUrl: '/modules/list/views/list.html',
-            controller: 'listCtrl',
-            controllerAs: 'List',
-            params: {
-                title: "List"
-            }
-        })
-        .state('tabs', {
-            url: '/tabs',
-            templateUrl: '/modules/tabs/views/tabs.html',
-            controller: 'tabsCtrl',
-            controllerAs: 'Tabs',
-            params: {
-                title: "Tabs"
-            }
-        });
-
+       
     $locationProvider.html5Mode(true);
 
 });

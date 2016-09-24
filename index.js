@@ -6,6 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
+app.use('/css', express.static(__dirname + '/css/'));
 
 app.get('/', function (req, res) {
   res.send('Hello World!');

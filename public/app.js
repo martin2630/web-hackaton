@@ -4,12 +4,8 @@ var materialApp = angular
     'ui.router',
     'ngMaterial',
     'appCtrl',
-    'cardsCtrl',
-    'cardsService',
-    'listCtrl',
-    'listService',
-    'tabsCtrl',
-    'tabsService'
+    'homeCtrl',
+    'homeService',
 ]).config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
     .primaryPalette('blue')
